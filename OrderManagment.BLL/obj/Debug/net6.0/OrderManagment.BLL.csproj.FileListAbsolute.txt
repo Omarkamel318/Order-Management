@@ -1,0 +1,16 @@
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\bin\Debug\net6.0\OrderManagment.BLL.deps.json
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\bin\Debug\net6.0\OrderManagment.BLL.dll
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\bin\Debug\net6.0\OrderManagment.BLL.pdb
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.AssemblyInfoInputs.cache
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.AssemblyInfo.cs
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.csproj.CoreCompileInputs.cache
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.sourcelink.json
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.dll
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\refint\OrderManagment.BLL.dll
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.pdb
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\ref\OrderManagment.BLL.dll
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\bin\Debug\net6.0\OrderManagment.DAL.dll
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\bin\Debug\net6.0\OrderManagment.DAL.pdb
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.csproj.AssemblyReference.cache
+D:\Web Course\backend\APIS\Order Managment\OrderManagment\OrderManagment.BLL\obj\Debug\net6.0\OrderManagment.BLL.csproj.CopyComplete
