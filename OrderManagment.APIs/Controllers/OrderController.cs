@@ -24,9 +24,10 @@ namespace OrderManagment.APIs.Controllers
 		public async Task<ActionResult<OrderReturnDto>> CreateOrder(OrderDto order)
 		{
 			var orderDto = await _orderService.CreateOrder(order);
-			if (orderDto is null)
+			var orderToReturnDto =_mapper.Map<OrderToReturnDto>(orderDto) ;
+			if (orderToReturnDto is null)
 				return BadRequest();
-			return Ok(orderDto);
+			return Ok(orderToReturnDto);
 		}
 
 		[HttpGet("{id}")]

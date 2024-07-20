@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using OrderManagment.BLL.DTO;
 using OrderManagment.BLL.Iservices;
 using OrderManagment.DAL.Data;
@@ -122,5 +123,8 @@ namespace OrderManagment.BLL.Services
             return order;
         }
 
-    }
+        public async Task<IReadOnlyList<Order>?> GetAllOrdersForCustomer(int customerId)
+            => await _dbContext.Set<Order>().Where(o => o.CustomerId == customerId).Include(o=>o.Items).ToListAsync();
+		
+	}
 }

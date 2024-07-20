@@ -8,18 +8,10 @@ using System.Threading.Tasks;
 
 namespace OrderManagment.BLL.Iservices
 {
-	public interface IOrderService
+	public interface ICustomerService
 	{
-		public Task<OrderReturnDto?> CreateOrder(OrderDto orderDto);
-		public Task<Order> GetOrderAsync(int id);
-		public Task<IReadOnlyList<Order>> GetAllOrderAsync();//Auth
-
-		public Task<Order?> UpdateStatus(int id, OrderStatus status);
-
+		public Task<Customer?> CreateCustomer(Customer customer);
 		public Task<IReadOnlyList<Order>?> GetAllOrdersForCustomer(int customerId);
 
-
-
-
-	} 
+	}
 }

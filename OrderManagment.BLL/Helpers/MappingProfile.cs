@@ -10,7 +10,10 @@ namespace OrderManagment.APIs.Helpers
         {
             CreateMap<OrderReturnDto, Order>().ForMember(d => d.TotalAmount, o => o.MapFrom(o => o.Total));
             CreateMap<Order,OrderToReturnDto>();
+            CreateMap<OrderReturnDto,OrderToReturnDto>();
+            CreateMap<CustomerDto,Customer>();
             CreateMap<OrderItem,OrderItemDto>();
+            CreateMap<OrderItemDto, OrderItem>();
         }
     }
 }
