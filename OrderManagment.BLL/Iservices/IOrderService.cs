@@ -12,7 +12,7 @@ namespace OrderManagment.BLL.Iservices
     {
 		public Task<OrderReturnDto?> CreateOrder(OrderDto orderDto);
 		public Task<Order> GetOrderAsync(int id);
-		public Task<IReadOnlyList<Order>> GetAllOrderAsync(int id);//Auth
+		public Task<IReadOnlyList<Order>> GetAllOrderAsync();//Auth
 
 		public Task<Order?> UpdateStatus(int id, OrderStatus status);
 

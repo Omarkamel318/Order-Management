@@ -15,7 +15,7 @@ namespace OrderManagment.BLL.Services
 {
     public class OrderService : IOrderService
 	{
-        private readonly IGenericRepository<Order> _orderRepo;
+        private readonly IOrderRepository _orderRepo;
         private readonly IGenericRepository<Product> _productRepo;
         private readonly IGenericRepository<OrderItem> _orderItemRepo;
         private readonly IGenericRepository<Invoice> _invoiceRepo;
@@ -23,7 +23,7 @@ namespace OrderManagment.BLL.Services
         private readonly IMapper _mapper;
 
         public OrderService
-            (IGenericRepository<Order> orderRepo,
+            (IOrderRepository orderRepo,
 			 IGenericRepository<Product> productRepo,
 			 IGenericRepository<OrderItem> orderItemRepo,
 			 IGenericRepository<Invoice> invoiceRepo,
@@ -54,6 +54,8 @@ namespace OrderManagment.BLL.Services
                         UnitPrice = product.Price
                     };
                     orderItems.Add(orderItem);
+                    product.Stock -= item.Quantity;
+                    _productRepo.Update(product);
                 }
                 else
                     return null;
@@ -102,11 +104,11 @@ namespace OrderManagment.BLL.Services
         }
 
         public async Task<Order> GetOrderAsync(int id)
-            => await _orderRepo.GetAsync(id);
+            => await _orderRepo.GetAsyncWithIncludeItem(id);
 
 
-        public async Task<IReadOnlyList<Order>> GetAllOrderAsync(int id) //Auth
-            => await _orderRepo.GetAllAsync();
+        public async Task<IReadOnlyList<Order>> GetAllOrderAsync() //Auth
+            => await _orderRepo.GetAllAsyncWithIncludeItems();
 
         //auth
         public async Task<Order?> UpdateStatus(int id, OrderStatus status)

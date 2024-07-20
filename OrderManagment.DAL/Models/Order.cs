@@ -8,5 +8,6 @@
 		public ICollection<OrderItem> Items { get; set; } = new HashSet<OrderItem>();
         public OrderStatus Status { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
+        public decimal Discount { get; set; }
     }
 }

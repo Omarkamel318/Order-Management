@@ -27,6 +27,7 @@ namespace OrderManagment.APIs
 			builder.Services.AddScoped<IGenericRepository<OrderItem>,GenericRepository<OrderItem>>();
 			builder.Services.AddScoped<IGenericRepository<Invoice>,GenericRepository<Invoice>>();
 			builder.Services.AddScoped<IOrderService, OrderService>();
+			builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 			builder.Services.AddAutoMapper(typeof(MappingProfile));
 			#endregion
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

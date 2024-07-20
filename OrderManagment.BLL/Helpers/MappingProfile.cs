@@ -8,7 +8,9 @@ namespace OrderManagment.APIs.Helpers
 	{
         public MappingProfile()
         {
-            CreateMap<OrderReturnDto, Order>();
+            CreateMap<OrderReturnDto, Order>().ForMember(d => d.TotalAmount, o => o.MapFrom(o => o.Total));
+            CreateMap<Order,OrderToReturnDto>();
+            CreateMap<OrderItem,OrderItemDto>();
         }
     }
 }
